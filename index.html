@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BOSS OS by BOSSAPPS.AI — AI Business Operating System for SMBs</title>
+  <meta name="description" content="BOSS OS is an AI Business Operating System for SMBs — one platform to run sales, operations, logistics, inventory, and finance, with autonomous AI agents built in." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0f1b33;
+      --text:#e8eefc;
+      --muted:#b7c4e2;
+      --accent:#6ee7b7;
+      --line:rgba(255,255,255,.10);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: radial-gradient(1000px 800px at 70% 0%, #122a55 0%, var(--bg) 55%),
+                  radial-gradient(900px 700px at 0% 40%, #0d2a2a 0%, var(--bg) 60%);
+      color:var(--text);
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:40px 18px}
+    .top{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+      padding:14px 16px;border:1px solid var(--line);border-radius:14px;
+      background:rgba(15,27,51,.55);backdrop-filter: blur(10px);
+    }
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:.4px}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--accent);box-shadow:0 0 18px rgba(110,231,183,.7)}
+    .pill{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:6px 10px;border-radius:999px}
+    h1{font-size:46px;line-height:1.05;margin:26px 0 10px}
+    .sub{font-size:18px;color:var(--muted);max-width:820px;line-height:1.5}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 14px;border-radius:12px;border:1px solid var(--line);
+      text-decoration:none;color:var(--text);background:rgba(15,27,51,.55);
+    }
+    .btnPrimary{
+      background:linear-gradient(135deg, rgba(110,231,183,.26), rgba(59,130,246,.22));
+      border:1px solid rgba(110,231,183,.35);
+    }
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:26px}
+    .card{
+      grid-column:span 6;
+      border:1px solid var(--line);border-radius:16px;padding:16px;
+      background:rgba(15,27,51,.55);backdrop-filter: blur(10px);
+    }
+    .card h3{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);line-height:1.45}
+    .kpiRow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
+    .kpi{
+      border:1px solid var(--line);border-radius:14px;padding:12px;
+      background:rgba(11,18,32,.4);
+    }
+    .kpi .t{font-size:12px;color:var(--muted)}
+    .kpi .v{font-size:18px;margin-top:6px}
+    .footer{margin-top:28px;color:var(--muted);font-size:12px}
+    @media (max-width:900px){
+      h1{font-size:36px}
+      .card{grid-column:span 12}
+      .kpiRow{grid-template-columns:repeat(2,1fr)}
+    }
+    form{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    input{
+      padding:12px 12px;border-radius:12px;border:1px solid var(--line);
+      background:rgba(11,18,32,.55);color:var(--text);min-width:260px;
+      outline:none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand"><span class="dot"></span> BOSSAPPS.AI</div>
+      <div class="pill">BOSS OS + BOSS Agents</div>
+    </div>
+
+    <h1>BOSS OS — AI Business Operating System for SMBs</h1>
+    <div class="sub">
+      One platform to run sales, operations, logistics, inventory, and finance — with autonomous AI agents that find work,
+      draft documents, update systems, and keep everything on track (with approvals and audit trails).
+    </div>
+
+    <div class="ctaRow">
+      <a class="btn btnPrimary" href="#early-access">Request early access</a>
+      <a class="btn" href="#modules">See modules</a>
+    </div>
+
+    <div class="kpiRow" aria-label="Product highlights">
+      <div class="kpi"><div class="t">All-in-one</div><div class="v">Business OS</div></div>
+      <div class="kpi"><div class="t">Automation</div><div class="v">AI Agents</div></div>
+      <div class="kpi"><div class="t">Control</div><div class="v">Approvals</div></div>
+      <div class="kpi"><div class="t">Trust</div><div class="v">Audit trail</div></div>
+    </div>
+
+    <div class="grid" id="modules">
+      <div class="card">
+        <h3>Leads & Pipeline</h3>
+        <p>Capture and manage leads, opportunities, and follow-ups. Agent can auto-triage inbound requests and create tasks.</p>
+      </div>
+      <div class="card">
+        <h3>Proposals / Quotes / Packages</h3>
+        <p>Create quotes and bid/proposal packages fast. Agent drafts checklists and assembles documents for review.</p>
+      </div>
+      <div class="card">
+        <h3>Procurement & Logistics</h3>
+        <p>Purchase orders, shipments, ETAs, and exceptions. Agent flags risk and recommends actions.</p>
+      </div>
+      <div class="card">
+        <h3>Warehouse & Inventory</h3>
+        <p>On-hand, allocated, available-to-promise, receiving, and pick/ship. Mobile-first flows with scan support.</p>
+      </div>
+      <div class="card">
+        <h3>Invoices & Finance Ops</h3>
+        <p>Upload invoices, extract key fields, match to orders, and track approvals. Integrate with accounting systems.</p>
+      </div>
+      <div class="card">
+        <h3>Integrations</h3>
+        <p>Connect email, accounting, shipping, payments, and document storage. Agents can act across connected tools.</p>
+      </div>
+    </div>
+
+    <div class="card" id="early-access" style="margin-top:12px">
+      <h3>Early access</h3>
+      <p>Get updates and request a pilot. We’ll follow up with a short onboarding call.</p>
+      <!-- Replace action with your form tool later (Typeform/Google Form/etc.) -->
+      <form onsubmit="event.preventDefault(); alert('Thanks! We will reach out shortly.');">
+        <input type="email" placeholder="Email address" required />
+        <input type="text" placeholder="Business type (restaurant, events, retail…)" />
+        <button class="btn btnPrimary" type="submit">Request access</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> BOSSAPPS.AI • BOSS OS • AI Agents built in
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
